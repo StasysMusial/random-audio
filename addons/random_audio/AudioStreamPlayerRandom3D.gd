@@ -53,5 +53,6 @@ func play_random() -> void:
 			stream = stream_array.streams[0]
 	
 	pitch_scale = pitch + ((randf() - 1.0) * 2.0) * pitch_deviation
+	pitch_scale = max(pitch_scale, 0.01)
 	volume_db = volume + ((randf() - 1.0) * 2.0) * volume_deviation
 	play()
