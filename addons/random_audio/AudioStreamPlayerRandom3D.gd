@@ -13,7 +13,7 @@ extends AudioStreamPlayer3D
 @export var playing_random: bool = false:
 	set(value):
 		if value:
-			playing = true
+			play_random()
 ## Use this instead of "autoplay"
 @export var autoplay_random: bool = false:
 	set(value):
