@@ -1,5 +1,5 @@
 @tool
-extends AudioStreamPlayer3D
+class_name AudioStreamPlayerRandom3D extends AudioStreamPlayer3D
 
 ## Use this instead of "volume_db"
 @export_range(-80.0, 24.0, 0.001) var volume: float
